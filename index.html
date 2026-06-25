@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hameshwaran - 3D Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <div class="container">
+        <div class="nav">
+            <div class="nav-title">💻 HAMESHWARAN</div>
+        </div>
+
+        <div class="hero">
+            <h1>FULL STACK DEVELOPER</h1>
+            <p>AI | Machine Learning | Web Technologies</p>
+        </div>
+
+        <div class="skills-panel">
+            <div class="skills-title">🔧 TOP SKILLS</div>
+            <div>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">MongoDB</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Projects:</span>
+                <span class="stat-value">5+</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Experience:</span>
+                <span class="stat-value">2+ Years</span>
+            </div>
+        </div>
+
+        <div class="contact-panel">
+            <div class="contact-item" onclick="window.open('mailto:itshameshoff@gmail.com')">
+                <div class="contact-icon">📧</div>
+                <span>Email</span>
+            </div>
+            <div class="contact-item" onclick="window.open('https://github.com/hameshwaran')">
+                <div class="contact-icon">⚙️</div>
+                <span>GitHub</span>
+            </div>
+            <div class="contact-item" onclick="window.open('https://linkedin.com/in/c-hameshwaran-934519273')">
+                <div class="contact-icon">🔗</div>
+                <span>LinkedIn</span>
+            </div>
+        </div>
+
+        <div class="scroll-hint">Scroll to explore • Click cards for details</div>
+    </div>
+
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <div id="modalTech"></div>
+            <div class="project-links" id="modalLinks"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
